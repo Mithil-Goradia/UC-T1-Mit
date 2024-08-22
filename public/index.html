@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="nav flex md:flex-row justify-between p-4 items-center bg-blue-950 sticky top-0 z-50">
+        <p class="text-3xl text-white">Shopping</p>
+        
+        <div class="hidden md:flex md:space-x-4 ">
+            <a href="#" class="text-white underline-offset-2">Home</a>
+            <a href="#" class="text-white">Categories</a>
+            <a href="#" class="text-white">About Us</a>
+            <a href="#" class="text-white">Your Cart</a>
+        </div>
+        
+        <div class="flex md:hidden">
+            <button href="#" class="text-white text-lg" id="menu"><span class="material-symbols-outlined">
+                menu
+                </span></button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-blue-950 text-white flex flex-col items-center justify-center md:hidden hidden">
+            <a href="#" class="py-2">Home</a>
+            <a href="#" class="py-2">Categories</a>
+            <a href="#" class="py-2">About Us</a>
+            <a href="#" class="py-2">Your Cart</a>
+            <button id="close-menu" class="mt-4 px-4 py-2 bg-red-600 rounded">Close</button>
+        </div>
+
+    </div>
+    <div class="upper flex items-center justify-center bg-blue-950 p-5 pb-10">
+        <img src="back.png" class="w-full rounded-lg"/>
+    </div>
+    <div id="products" class="flex items-centre justify-evenly">
+        <div id="container" class="flex flex-wrap gap-6 mt-10">
+            
+        </div>
+    </div>
+    <div id="add-but" class="bg-blue-900 p-4 flex justify-center">
+        <div class="bg-white w-1/2 p-4 flex flex-col justify-center items-center rounded-lg">
+            <input id="title" placeholder="Enter the title" class="p-2 border-r-blue-700 rounded-lg border-solid m-2">
+            <input id="price" placeholder="Enter the price" class="p-2 border-r-blue-700 rounded-lg border-solid m-2">
+            <input id="description" placeholder="Enter the description" class="p-2 border-r-blue-700 rounded-lg border-solid m-2">
+            <button id="add" class="text-white p-2 rounded-lg bg-red-700 font-bold mt-10">Add products</button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
